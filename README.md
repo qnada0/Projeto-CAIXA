@@ -1,6 +1,11 @@
 # Caixa Perto - MVP
 
-MVP web app de gamificação educacional para beneficiários Caixa.
+MVP web app de gamificação educacional para beneficiários CAIXA.
+
+- 🌐 Demo: https://qnada0.github.io/Projeto-CAIXA/
+- ✅ CI: https://github.com/qnada0/Projeto-CAIXA/actions/workflows/ci.yml
+
+![CI](https://github.com/qnada0/Projeto-CAIXA/actions/workflows/ci.yml/badge.svg)
 
 ## Características
 
@@ -10,6 +15,17 @@ MVP web app de gamificação educacional para beneficiários Caixa.
 - UI mobile-first responsiva
 - Dev Panel para simular cenários de erro
 - Componentes reutilizáveis
+  
+  ## Conteúdo
+- [Stack](#stack)
+- [Configuração](#configuração)
+- [Como rodar](#como-rodar)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Rotas](#rotas)
+- [Dev Panel](#dev-panel)
+- [Sistema de pontuação](#sistema-de-pontuação)
+- [Sistema de Quiz](#sistema-de-quiz)
+- [Integração de Vídeo](#integração-de-vídeo)
 
 ## Stack
 
@@ -34,6 +50,7 @@ VITE_CONTENT_API_BASE_URL=https://api.exemplo.com
 **Nota:** Se `VITE_CONTENT_API_BASE_URL` não estiver definida, o app funcionará no modo offline com fallback.
 
 ## Como rodar
+
 
 ### 1. Instalar dependências
 
@@ -60,6 +77,12 @@ npm run build
 ```bash
 npm run preview
 ```
+
+```md
+## Deploy (GitHub Pages)
+
+```bash
+npm run deploy
 
 ## Estrutura do projeto
 
