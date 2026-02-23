@@ -70,6 +70,7 @@ O app estará disponível em `http://localhost:5173` e iniciará na rota `/popup
 
 ```bash
 npm run build
+
 ```
 
 ### 4. Preview do build
@@ -83,6 +84,19 @@ npm run preview
 
 ```bash
 npm run deploy
+
+Qualidade (checks)
+npm run lint
+npm run typecheck
+npm run build
+
+Deploy (GitHub Pages)
+
+Para publicar/atualizar a demo:
+
+npm run deploy
+
+Demo: https://qnada0.github.io/Projeto-CAIXA/
 
 ## Estrutura do projeto
 
