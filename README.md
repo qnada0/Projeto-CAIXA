@@ -90,12 +90,6 @@ npm run lint
 npm run typecheck
 npm run build
 
-Deploy (GitHub Pages)
-
-Para publicar/atualizar a demo:
-
-npm run deploy
-
 Demo: https://qnada0.github.io/Projeto-CAIXA/
 
 ## Estrutura do projeto
@@ -223,6 +217,27 @@ type Quiz = {
   title: string;
   questions: QuizQuestion[];
 };
+type VideoAsset = {
+  id: string;
+  title?: string;
+  url: string;
+  expiresAt: string;
+  mimeType?: string;
+  provider?: string;
+};
+
+type Step = {
+  id: string;
+  title: string;
+  description: string;
+  video: VideoAsset;
+};
+
+type Trail = {
+  id: string;
+  title: string;
+  steps: Step[];
+};
 ```
 
 ### Componente Reutilizável
@@ -320,28 +335,4 @@ Renova a URL assinada de um vídeo quando expira.
 4. **Fallback**: Se a renovação falhar ou API estiver indisponível, mostra mensagem permitindo continuar
 5. **Dev Panel**: Toggle `videoFail` força o fallback sem chamar a API
 
-### Tipos TypeScript
 
-```typescript
-type VideoAsset = {
-  id: string;
-  title?: string;
-  url: string;
-  expiresAt: string;
-  mimeType?: string;
-  provider?: string;
-};
-
-type Step = {
-  id: string;
-  title: string;
-  description: string;
-  video: VideoAsset;
-};
-
-type Trail = {
-  id: string;
-  title: string;
-  steps: Step[];
-};
-```
